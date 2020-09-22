@@ -59,16 +59,6 @@ function Navbar() {
                   Home
                 </NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks to='/services' onClick={closeMobileMenu}>
-                  Services
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to='/products' onClick={closeMobileMenu}>
-                  Products
-                </NavLinks>
-              </NavItem>
               <NavItemBtn>
                 {button ? (
                   <NavBtnLink to='/sign-up'>
