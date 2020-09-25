@@ -13,6 +13,21 @@ export const homeObjOne = {
   img: require('../../images/Annepro2.jpg'),
   start: ''
 };
+export const homeObjOneWhite = {
+  primary: false,
+  lightBg: true,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Mechanical Keyboard',
+  headline: 'Your Best Friend To Must Hours Typing',
+  description:
+    'It is not at Writer Machine but the sound is goood.',
+  buttonLabel: 'Get Started',
+  imgStart: '',
+  img: require('../../images/Annepro2.jpg'),
+  start: ''
+};
 
 export const homeObjFour = {
   primary: true,
@@ -29,7 +44,34 @@ export const homeObjFour = {
   alt: 'Vault',
   start: 'true'
 };
-
+export const homeObjFourWhite = {
+  primary: false,
+  lightBg: true,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
+  headline: 'Sign up to now receive news updates ',
+  description:
+    'Receive news and reviews about Mechanical keyboards',
+  buttonLabel: 'Sign Up Now',
+  imgStart: '',
+  img: require('../../images/keyboard.jpg'),
+  alt: 'Vault',
+  start: 'true'
+};
+export const homeObjFiveWhite = {
+  primary: false,
+  lightBg: true,
+  lightTopLine: false,
+  lightText: false,
+  lightTextDesc: false,
+  headline: 'Best Keyboards For Programming',
+  description:'Keyboard is a Weapon for developers.',
+  imgStart: 'end',
+  url:'https://www.youtube.com/watch?v=yMqDxF8c3cQ',
+  alt: 'Vault',
+  start: 'true'
+}
 export const homeObjFive = {
   primary: true,
   lightBg: false,

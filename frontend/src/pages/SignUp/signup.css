@@ -16,7 +16,15 @@ light green: #A3C4BC
   align-items: center;
   background-color: #000;
 }
-
+.wrapperdark {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
 .form-wrapper {
   width: 400px;
   display: flex;

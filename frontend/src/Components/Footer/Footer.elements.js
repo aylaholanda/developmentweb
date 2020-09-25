@@ -11,6 +11,15 @@ export const FooterContainer = styled.div`
   align-items: center;
 `;
 
+export const FooterContainerLight = styled.div`
+  background-color: #fff;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const FooterSubscription = styled.section`
   display: flex;
   flex-direction: column;
@@ -152,7 +161,10 @@ export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
 `;
-
+export const WebsiteRightsLDark = styled.small`
+  color: #000;
+  margin-bottom: 16px;
+`;
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
@@ -162,5 +174,9 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: #fff;
+  font-size: 24px;
+`;
+export const SocialIconLinkDark = styled.a`
+  color: #000;
   font-size: 24px;
 `;

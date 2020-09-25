@@ -24,7 +24,8 @@ function VideoPlayer({
   description,
   url,
   imgStart,
-  start
+  start,
+  Darkmode
 }) {
   return (
     <>

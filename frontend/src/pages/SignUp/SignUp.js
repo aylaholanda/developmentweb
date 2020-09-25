@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./signup.css";
+import { Navbar, Footer } from '../../Components';
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 );
@@ -95,7 +96,8 @@ class SignUp extends Component {
 
   render() {
     const { formErrors } = this.state;
-
+    if(global.darkMode)
+    {
     return (
       <div className="wrapper">
         <div className="form-wrapper">
@@ -164,8 +166,85 @@ class SignUp extends Component {
           </form>
         </div>
       </div>
+     
     );
+  }else{ 
+    return (
+      
+    <div className="wrapperdark">
+      <div className="form-wrapper">
+        <h1>Create Account</h1>
+        <form onSubmit={this.handleSubmit} noValidate>
+          <div className="firstName">
+            <label htmlFor="firstName">First Name</label>
+            <input
+              className={formErrors.firstName.length > 0 ? "error" : null}
+              placeholder="First Name"
+              type="text"
+              name="firstName"
+              noValidate
+              onChange={this.handleChange}
+            />
+            {formErrors.firstName.length > 0 && (
+              <span className="errorMessage">{formErrors.firstName}</span>
+            )}
+          </div>
+          <div className="lastName">
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              className={formErrors.lastName.length > 0 ? "error" : null}
+              placeholder="Last Name"
+              type="text"
+              name="lastName"
+              noValidate
+              onChange={this.handleChange}
+            />
+            {formErrors.lastName.length > 0 && (
+              <span className="errorMessage">{formErrors.lastName}</span>
+            )}
+          </div>
+          <div className="email">
+            <label htmlFor="email">Email</label>
+            <input
+              className={formErrors.email.length > 0 ? "error" : null}
+              placeholder="Email"
+              type="email"
+              name="email"
+              noValidate
+              onChange={this.handleChange}
+            />
+            {formErrors.email.length > 0 && (
+              <span className="errorMessage">{formErrors.email}</span>
+            )}
+          </div>
+          <div className="password">
+            <label htmlFor="password">Password</label>
+            <input
+              className={formErrors.password.length > 0 ? "error" : null}
+              placeholder="Password"
+              type="password"
+              name="password"
+              noValidate
+              onChange={this.handleChange}
+            />
+            {formErrors.password.length > 0 && (
+              <span className="errorMessage">{formErrors.password}</span>
+            )}
+          </div>
+          <div className="createAccount">
+            <button type="submit">Create Account</button>
+            
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+
   }
+  
+  }
+  
+  
 }
 
 
